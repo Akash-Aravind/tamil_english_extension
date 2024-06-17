@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "Translator",
+    "description":"Enable and convert all tamil text to english text in websites",
+    "version": "1.0",
+    "background":{
+        "scripts":["background.js"]
+    },
+    "permissions": [
+      "storage"
+    ],
+
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icons/doppo.jpeg",
+        "48": "icons/doppo.jpeg",
+        "128": "icons/doppo.jpeg"
+      }
+    },
+    "content_scripts": [
+      {
+        "matches": ["http://*/*","https://*/*"],
+        "js": ["myscript.js"]
+      }
+    ]
+  }

@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "google-translate-api-browser": "^4.2.7",
+    "jpickle": "^0.4.1"
+  }
+}
